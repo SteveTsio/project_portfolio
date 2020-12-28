@@ -116,18 +116,20 @@ a {
 	z-index: -1;
 	align-items: center;
 	justify-content: center;
+	display: none;
 }
 
 .rightBox p{
-	float: right;
 	text-align: center;
 	align-content: center;
 	justify-content: center;
+	font-size: 0.9em;
 }
 
 .leftImg img{
 	display: none;
 }
+
 
 /* 
   Media Queries
@@ -177,6 +179,70 @@ a {
 		padding-left: 100px;
 		z-index: 2;
 		/* i must insert shadow effect */
-    }
+	}
+	/* Center */
+	.centralContainer{
+		padding: 80px;
+	}
+	.centralContainer img{
+		width: 65%;
+		height: 65%;
+	}
 
+	.centralContainer h1{
+		z-index: 1;
+		position: absolute;
+		bottom: 145px;
+		right: 400px;
+		color: white;
+		font-size: 3.5em;
+	}
+	
+	.centralContainer h2{
+		z-index: 2;
+		text-align: left;
+		position: absolute;
+		bottom: 100px;
+		right: 400px;
+		color: white;
+		font-size: 2.5em;
+	}
+	#stav {
+		color: #92192b;
+	}
+	#tsio{
+		color: #92192b;
+	}
+
+	
+	/* bottom */
+	.rightBox{
+		float: right;
+		background-color: #223850;
+		width: 65%;
+		height: 100%;
+		display: block;
+		margin-right: 60px;
+	}
+	.rightBox  img{
+		height: 50%;
+		width: 25%;
+		z-index: -1;
+		align-items: center;
+		justify-content: center;
+		display: block;
+		margin-top: 0px;
+	}
+	
+	.rightBox p{
+		text-align: center;
+		font-size: 0.9em;
+	}
+	
+	.leftImg img{
+		display: block;
+		width: 25%;
+		padding-left: 60px;
+		float: left;
+	}
 }
