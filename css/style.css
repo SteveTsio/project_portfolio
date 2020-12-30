@@ -221,22 +221,25 @@ a {
 		background-color: #223850;
 		width: 65%;
 		height: 100%;
-		display: block;
+		display: flex;
 		margin-right: 60px;
 	}
 	.rightBox  img{
-		height: 50%;
-		width: 25%;
-		z-index: -1;
+		height: 65%;
+		width: 30%;
 		align-items: center;
 		justify-content: center;
-		display: block;
+		display: flex;
 		margin-top: 0px;
+		z-index: 0;
+		flex: 1;
 	}
 	
 	.rightBox p{
 		text-align: center;
 		font-size: 0.9em;
+		padding: 10px 50px;
+		flex: 1;
 	}
 	
 	.leftImg img{
@@ -248,7 +251,7 @@ a {
 }
 /* --------- Bio page -----------*/
 
-.jumboContainer{
+.jumboContainer{ /* universal */
 	margin: 60px;
 }
 
@@ -295,7 +298,36 @@ a {
 	}
 
 	@media (min-width: 1025px) {
+		.upperBox
+		{
+			display: flex;
+			margin-top: 100px;
+		}
+		.upperBox img{
+			float: left;
+			flex: 1;
+			width: 25%;
+		}
+		.upperBox p {
+			float: right;
+			flex: 4;
+		}
 
+		.generalBox
+		{
+			display: flex;
+			margin-top: 100px;
+		}
+		.generalBox img{
+			float: left;
+			flex: 1;
+			width: 25%;
+			height: 10%;
+		}
+		.generalBox p {
+			float: right;
+			flex: 1;
+		}
    }
 /* --------- Contact page page -----------*/
 
@@ -399,11 +431,55 @@ a {
 
 /* --------- Services page -----------*/
 
+.bigBox{
+	display: flex;
+	width: auto;
+	height: 100%;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: #223850;
+}
+.bigBox img{
+	width: 100%;
+	}
+
+.bigBox p{
+	color: #ffffff;
+	text-align: center;
+	padding: 10px;
+}
+
 /* media queries got services page */
 @media (min-width: 769px) {
-
+	
 }
 
 @media (min-width: 1025px) {
+	
+	.bigBox{
+		margin: 50px 250px;
+	}
+	#bigBox1{
+		margin-top: 100px;
+	}
+	.bigBox img{
+		width: 100%;
+		height: 50%;
+		
+	}
+	hr {
+		height:3px;
+		border-width:0;
+		color: #92192b;
+		background-color: #92192b;
+	}
 
+}
+@media (min-width: 1675px) {
+	.bigBox img{
+		width: 100%;
+		height: 570px;
+		
+	}
 }
