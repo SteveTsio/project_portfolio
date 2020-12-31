@@ -30,6 +30,8 @@ a {
 .logo {
 	margin: 0;
 	font-size: 1.45em;
+	-webkit-filter: drop-shadow(5px 5px 5px #222);
+  	filter: drop-shadow(5px 5px 5px #222);
 }
 
 .main-nav {
@@ -384,67 +386,72 @@ a {
 
 /* --------- Portfolio page -----------*/
 
-.compliBox {
+.displayWork{
+	display:flex;
 	background-color: #223850;
-	align-content: center;
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr;
-	grid-template-rows: 1fr 1fr;
+	padding-bottom: 20px;
+	border-bottom: 10px #92192b;
 }
-.compliBox img{
-	width: 100%;
-	height: auto;
-	justify-content: center;
-	grid-row: 1/2;
-	grid-column: 1/3;
+.displayWork img{
+	width: 50%;
+	height: 50%;
+	float: left;
 }
-.compliBox p{
-	grid-row: 1/2;
-	grid-column: 3/5;
+
+.displayWork p{
+	float: right;
+	padding: 15px;
 	text-align: center;
-	padding: 5px;
+	color: #ffffff;
+	font-size: 12px;
 }
 
 .displayImgs{
-	grid-row: 2/4;
-	grid-column: 1/5;
-	display: inline-flex;
-	width: 50%;
+	display: flex;
+	background: rgb(2,0,36);
+	background: linear-gradient(0deg, rgba(2,0,36,0) 0%, rgba(34,56,80,1) 55%);
+}
+
+.displayImgs{
+	justify-content: space-between;
 	
 }
-
-#correct{
-	padding-left: 5%;
+.displayImgs img{
+	width: 49%;
+	
 }
-
 #toHide{
 	display: none;
 }
-#complibox2{
-	margin-top: 50px;
-} 
 
+#complibox2{
+	padding-top: 50px;
+}
 /* media queries got portfolio page */
 @media (min-width: 769px) {
-	
-	#toHide{
-		display:inline-block;
+	.displayImgs img{
+		width: 23%;
 	}
+	.displayWork p {
+		font-size: 20px;
+	}
+	#toHide{
+		display: block;
+	}
+	
 }
 
 @media (min-width: 1025px) {
-	.compliBox {
-		height: 400px;
-		margin: 200px 0px;
+	.displayWork img{
+		width: 25%;
 	}
-	.compliBox img{
-		width: 24%;
-		height: auto;
-		display: inline-block;
+	.jumboContainer{
+		padding: 60px 150px;
 	}
-	#toHide{
-		display:inline-block;
+	.displayWork p {
+		font-size: 20px;
 	}
+
 }
 
 /* --------- Services page -----------*/
