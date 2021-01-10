@@ -356,7 +356,7 @@ a {
 	justify-content: center;
 	
 }
-	 /* media queries got contact page */
+	 /* media queries for contact page */
 	 
 	 @media (min-width: 769px) {
 		.contactBox img{
@@ -427,7 +427,7 @@ a {
 #complibox2{
 	padding-top: 50px;
 }
-/* media queries got portfolio page */
+/* media queries for portfolio page */
 @media (min-width: 769px) {
 	.displayImgs img{
 		width: 23%;
@@ -475,7 +475,7 @@ a {
 	padding: 10px;
 }
 
-/* media queries got services page */
+/* media queries for services page */
 @media (min-width: 769px) {
 	
 }
