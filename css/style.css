@@ -30,9 +30,12 @@ a {
 	margin: 0;
 	font-size: 1.45em;
 	-webkit-filter: drop-shadow(5px 5px 5px #222);
-  	filter: drop-shadow(5px 5px 5px #222);
+	  filter: drop-shadow(5px 5px 5px #222);
+	animation: mymove 2s;  
 }
-
+@keyframes mymove {
+	0% {opacity: 0;}
+  }
 .main-nav {
 	margin-top: 5px;
 
@@ -338,6 +341,7 @@ a {
 	width: 100%;
 	height: 50%;
 	background-color: #223850;
+
 }
 
 .contactBox img{
@@ -346,16 +350,47 @@ a {
 }
 
 .contactBox p{
-	padding: 10px;
+	padding: 50px;
+	font-size: 12.1px;
 	text-align: center;
 	color: #ffffff;
 }
 
-.contactForm{
+.formClass{
 	text-align: center;
 	justify-content: center;
-	
+	padding: 25px 50px;
+	animation: formAnime 5s infinite;
 }
+@keyframes formAnime{
+	0% {background-color: rgb(255, 255, 255);}
+	50% {background-color: lightgray;}
+	100% {background-color: rgb(255, 255, 255);}
+}
+input[type=text], select, input[type=email], input[type=tel] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  input[type=submit] {
+    width: 100%;
+    background-color: #223850;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #1d3ca5;
+  }
 	 /* media queries for contact page */
 	 
 	 @media (min-width: 769px) {
@@ -363,10 +398,21 @@ a {
 			width: 100%;
 			height: 50%;
 		}
-		
+		.formClass{
+			
+			width: 40%;
+		}
+		.contactForm{
+			justify-content: center;
+			display: flex;
+		}
+		.contactBox p{
+			text-align: center;
+			font-size: 13px;
+		}
 	}
 	
-	@media (min-width: 1025px) {
+	@media (min-width: 1366px) {
 		#cbox1{
 			margin-top: 90px;
 		}
@@ -379,8 +425,16 @@ a {
 		}
 		.contactBox p{
 			text-align: center;
+			font-size: 15px;
 		}
-		
+		.formClass{
+			
+			width: 50%;
+		}
+		.contactForm{
+			justify-content: center;
+			display: flex;
+		}
 	}
 	
 
@@ -450,6 +504,14 @@ a {
 	}
 	.displayWork p {
 		font-size: 20px;
+	}
+	#jumboPort{
+		margin-top: 5%;
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+	#complibox1{
+		margin-bottom: 5%;
 	}
 
 }
