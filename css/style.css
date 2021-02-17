@@ -280,6 +280,7 @@ a {
 
 .generalBox{
 	margin: 30px 0px;
+	padding: 20px;
 	width: 100%;
 	height: 50%;
 	background-color: #223850;
@@ -302,7 +303,7 @@ a {
 
 	}
 
-	@media (min-width: 1025px) {
+	@media (min-width: 1371px) {
 		.upperBox
 		{
 			display: flex;
@@ -316,6 +317,7 @@ a {
 		.upperBox p {
 			float: right;
 			flex: 4;
+			align-self: center;
 		}
 
 		.generalBox
@@ -325,13 +327,14 @@ a {
 		}
 		.generalBox img{
 			float: left;
-			flex: 1;
-			width: 25%;
+			flex: 1/2;
+			width: 30%;
 			height: 10%;
 		}
 		.generalBox p {
 			float: right;
 			flex: 1;
+			align-self: center;
 		}
    }
 /* --------- Contact page page -----------*/
@@ -442,6 +445,7 @@ input[type=text], select, input[type=email], input[type=tel] {
 
 .displayWork{
 	display:flex;
+	flex-direction: column;
 	background-color: #223850;
 	padding-bottom: 20px;
 	border-bottom: 10px #92192b;
@@ -483,11 +487,16 @@ input[type=text], select, input[type=email], input[type=tel] {
 }
 /* media queries for portfolio page */
 @media (min-width: 769px) {
+	.displayWork{
+		display:flex;
+		flex-direction: row;
+	}
 	.displayImgs img{
 		width: 23%;
 	}
 	.displayWork p {
-		font-size: 20px;
+		font-size: 16px;
+		padding: 30px;
 	}
 	#toHide{
 		display: block;
@@ -495,7 +504,12 @@ input[type=text], select, input[type=email], input[type=tel] {
 	
 }
 
+
 @media (min-width: 1025px) {
+	.displayWork{
+		display:flex;
+		flex-direction: row;
+	}
 	.displayWork img{
 		width: 25%;
 	}
@@ -503,7 +517,9 @@ input[type=text], select, input[type=email], input[type=tel] {
 		padding: 60px 150px;
 	}
 	.displayWork p {
-		font-size: 20px;
+		
+    	font-size: 1vw;
+		margin: 50px;
 	}
 	#jumboPort{
 		margin-top: 5%;
