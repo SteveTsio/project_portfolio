@@ -1,0 +1,16 @@
+{
+    "service1":{
+        "title":"title1",
+        "text":"lorem text"
+    },
+
+    "service2":{
+        "title":"title1",
+        "text":"lorem text"
+    },
+
+    "service3":{
+        "title":"title1",
+        "text":"lorem text"
+    }
+}

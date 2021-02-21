@@ -59,3 +59,14 @@ form.addEventListener('submit', (event) =>{
 });
 
 // form handling END
+// json start
+
+
+fetch('./assets/assets.json')
+    .then((response) => response.json())
+    .then((data)=>{document.getElementById('Gdesign').innerText = service1.title)})
+
+/*const mainJson = ()=>{
+    console.log(main.service1.text);
+} */
+
