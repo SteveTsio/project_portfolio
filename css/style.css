@@ -370,6 +370,33 @@ a {
 	padding: 25px 50px;
 	animation: formAnime 5s infinite;
 }
+/* svg edits and animation*/ 
+.svg_place{
+	justify-content: center;
+	display: flex;
+	margin-top: 15px;
+}
+#static{
+	z-index: 2;
+}
+#Letter{
+	animation: letter 6s infinite;
+	z-index: 1;
+}
+
+@keyframes letter{
+	0%{
+		transform: translateY(1000px);
+	}
+	50%{
+		transform: translateY(0px);
+	}
+	100%{
+		transform: translateY(1000px);
+	}
+	
+}
+/* svg edits and animation*/ 
 @keyframes formAnime{
 	0% {background-color: rgb(255, 255, 255);}
 	50% {background-color: lightgray;}
@@ -439,9 +466,10 @@ input[type=text], select, input[type=email], input[type=tel] {
 			
 			width: 50%;
 		}
-		.contactForm{
+		.contactForm, .svg_place{
 			justify-content: center;
 			display: flex;
+			margin-top: 25px;
 		}
 	}
 	
