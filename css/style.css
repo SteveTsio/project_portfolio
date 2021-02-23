@@ -217,10 +217,13 @@ a {
 		font-size: 2.5em;
 	}
 	#stav {
-		color: #92192b;
+		color: lightgray;
+		text-shadow: 2.5px 2px #92192b;
 	}
 	#tsio{
-		color: #92192b;
+		color: lightgray;
+		text-shadow: 2.5px 2px #92192b;
+		
 	}
 
 	

@@ -1,16 +1,12 @@
 {
-    "service1":{
-        "title":"title1",
-        "text":"lorem text"
+    "Quote1":{
+        "title":"my_first_quote",
+        "text":"Normality is a paved road: it’s comfortable to walk but no flowers grow. <br><br> <b>Vincent van Gogh</b>"
     },
 
-    "service2":{
-        "title":"title1",
-        "text":"lorem text"
-    },
-
-    "service3":{
-        "title":"title1",
-        "text":"lorem text"
+    "Quote2":{
+        "title":"my_second_quote",
+        "text":"Some painters transform the sun into a yellow spot, others transform a yellow spot into the sun.<br><br> <b>Pablo Picasso</b>"
     }
+
 }
