@@ -169,10 +169,15 @@ footer h2{
 	color: #ffffff;
 	font-size: .99em;
 	padding: 5px;
+	text-decoration: underline;
 }
 
 .bot-nav a:hover {
 	color: #87888a;
+}
+/* The navigate word on the footer*/
+#toLarge{
+	font-size: larger;
 }
 /* 
   Media Queries (Universal)
