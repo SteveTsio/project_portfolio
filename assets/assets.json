@@ -1,12 +1,15 @@
 {
-    "Quote1":{
-        "title":"my_first_quote",
-        "text":"Normality is a paved road: it’s comfortable to walk but no flowers grow. <br><br> <b>Vincent van Gogh</b>"
-    },
-
-    "Quote2":{
-        "title":"my_second_quote",
-        "text":"Some painters transform the sun into a yellow spot, others transform a yellow spot into the sun.<br><br> <b>Pablo Picasso</b>"
-    }
-
+    "Quotes": [
+        {
+            "Quote1": {
+                "title":"my_first_quote",
+                "text":"Normality is a paved road: it’s comfortable to walk but no flowers grow. <br><br> <b>Vincent van Gogh</b>"
+            },
+            "Quote2": {
+                "title":"my_first_quote",
+                "text":"Normality is a paved road: it’s comfortable to walk but no flowers grow. <br><br> <b>Vincent van Gogh</b>"
+            }
+        }
+    
+    ]
 }

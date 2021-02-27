@@ -62,9 +62,11 @@ form.addEventListener('submit', (event) =>{
 // json start
 
 
-fetch('./assets/assets.json')
-    .then((response) => response.json())
-    .then((data)=>{document.getElementById('Gdesign').innerText = service1.title)})
+fetch("./assets/assets.json")
+  .then((response) => response.json())
+  .then((data) => {
+    document.getElementById("toLarge").innerText = data.Quotes.Quote1;
+  });
 
 /*const mainJson = ()=>{
     console.log(main.service1.text);
