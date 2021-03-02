@@ -16,7 +16,6 @@ let rePhone = /^\d{3,5}[- ]?\d{5,}$/;
 
 let isValid = true;
 
-
 form.addEventListener('submit', (event) =>{
 
     if (fName.value.trim().length === 0) {
@@ -59,16 +58,5 @@ form.addEventListener('submit', (event) =>{
 });
 
 // form handling END
-// json start
 
-
-fetch("./assets/assets.json")
-  .then((response) => response.json())
-  .then((data) => {
-    document.getElementById("toLarge").innerText = data.Quotes.Quote1;
-  });
-
-/*const mainJson = ()=>{
-    console.log(main.service1.text);
-} */
 
