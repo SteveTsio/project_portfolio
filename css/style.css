@@ -429,7 +429,11 @@ footer h2{
 .svg_place{
 	justify-content: center;
 	display: flex;
-	margin-top: 15px;
+	
+}
+.contactForm, .svg_place{
+	margin-top: 25px;
+	margin-bottom: 25px ;
 }
 #static{
 	z-index: 2;
@@ -481,6 +485,8 @@ input[type=text], select, input[type=email], input[type=tel] {
   input[type=submit]:hover {
     background-color: #1d3ca5;
   }
+
+
 	 /* media queries for contact page */
 	 
 	 @media (min-width: 769px) {
@@ -490,7 +496,7 @@ input[type=text], select, input[type=email], input[type=tel] {
 		}
 		.formClass{
 			
-			width: 40%;
+			width: 60%;
 		}
 		.contactForm{
 			justify-content: center;
@@ -499,6 +505,10 @@ input[type=text], select, input[type=email], input[type=tel] {
 		.contactBox p{
 			text-align: center;
 			font-size: 13px;
+		}
+		.contactForm, .svg_place{
+			margin-top: 25px;
+			margin-bottom: 25px ;
 		}
 	}
 	
@@ -525,6 +535,7 @@ input[type=text], select, input[type=email], input[type=tel] {
 			justify-content: center;
 			display: flex;
 			margin-top: 25px;
+			margin-bottom: 25px ;
 		}
 	}
 	
