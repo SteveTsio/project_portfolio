@@ -13,7 +13,8 @@ const init = (n) => {
   dots[n].classList.add("active")
 }
 document.addEventListener("DOMContentLoaded", init(currentSlide))
-const next = () => {
+const next = (event) => {
+  event.preventDefault(); //when i prevent default play button does not work
   currentSlide >= slides.length - 1 ? currentSlide = 0 : currentSlide++
   init(currentSlide)
 }
@@ -25,7 +26,7 @@ const prev = () => {
 
 let interval = null;
 
-const clickStart = (flag) => {
+/* const clickStart = (flag) => {
   if (flag)
   {
     interval = setInterval(()=> {
@@ -38,21 +39,20 @@ const clickStart = (flag) => {
   
 }
 
-// na valw ena flag giati kanei to interval number
+Functions of the deleted buttons
 
-const clickStop = () => { // do not know how to stop interval
-  //clearInterval(interval);
+const clickStop = () => { 
   clickStart(false);
   console.log(interval);
-}
+} */
 
 document.querySelector(".next").addEventListener('click', next)
 
 document.querySelector(".prev").addEventListener('click', prev)
 
-document.querySelector(".start").addEventListener('click', clickStart)
+//document.querySelector(".start").addEventListener('click', clickStart) Deleted buttons because i did not like them
 
-document.querySelector(".stop").addEventListener('click', clickStop)
+//document.querySelector(".stop").addEventListener('click', clickStop) Deleted buttons because i did not like them
 
 
 dots.forEach((dot, i) => {
