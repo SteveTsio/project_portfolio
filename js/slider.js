@@ -19,7 +19,8 @@ const next = (event) => {
   init(currentSlide)
 }
 
-const prev = () => {
+const prev = (event2) => {
+  event2.preventDefault(); 
   currentSlide <= 0 ? currentSlide = slides.length - 1 : currentSlide--
   init(currentSlide)
 }
