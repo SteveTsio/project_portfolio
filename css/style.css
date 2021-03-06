@@ -51,6 +51,7 @@ a {
 .main-nav a {
 	color: #223850;
 	font-size: .99em;
+	font-weight: 600;
 }
 
 .main-nav a:hover {
