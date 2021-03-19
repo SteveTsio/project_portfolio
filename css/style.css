@@ -87,7 +87,7 @@ i{
     font-size: 2rem;
     cursor: pointer;
 }
-openMenu{
+.openMenu{
     font-size: 2rem;
     margin:20px;
     cursor: pointer;
@@ -139,23 +139,35 @@ openMenu{
 
 }
 
+.rightBox{
+	float: right;
+	background-color: #223850;
+	width: auto;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 60px;
+}
 .rightBox  img{
-	height: 50%;
-	width: 40%;
-	float: left;
-	z-index: -1;
+	height: 65%;
+	width: 30%;
 	align-items: center;
 	justify-content: center;
-	display: none;
+	align-self: center;
+	display: flex;
+	margin-top: 0px;
+	z-index: 0;
+	flex: 1;
 }
 
 .rightBox p{
 	text-align: center;
-	align-content: center;
-	justify-content: center;
-	font-size: 1.5em;
-	color: #ffffff;
-	display: none;
+	font-size: 0.8em;
+	padding: 10px 50px;
+	flex: 1;
+	align-self:center;
+	display: block;
+	color: white;
 }
 
 .leftImg img{
@@ -232,6 +244,7 @@ footer h2{
 		width: auto;
 		height: 100%;
 		display: flex;
+		flex-direction: column;
 		margin-bottom: 60px;
 	}
 	.rightBox  img{
@@ -239,6 +252,7 @@ footer h2{
 		width: 30%;
 		align-items: center;
 		justify-content: center;
+		align-self: center;
 		display: flex;
 		margin-top: 0px;
 		z-index: 0;
@@ -273,7 +287,6 @@ footer h2{
     .header img{ /*this is universal for all pages */
         height: 100%;
 		width: 100%;
-		padding-left: 100px;
 		z-index: 2;
 		
 	}
@@ -322,7 +335,8 @@ footer h2{
 		width: auto;
 		height: 100%;
 		display: flex;
-		margin-bottom: 60px;
+		flex-direction: row;
+		margin: 60px;
 	}
 	.rightBox  img{
 		height: 65%;
