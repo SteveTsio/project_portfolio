@@ -847,8 +847,15 @@ input[type=text], select, input[type=email], input[type=tel] {
 .bigBox p{
 	color: #ffffff;
 	text-align: center;
-	padding: 30px;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-bottom: 30px;
+	font-size: 1em;
 }
+.bigBox h1{
+	color: #ffffff;
+	text-align: center;
+}	
 
 /* media queries for services page */
 @media (min-width: 769px) {
