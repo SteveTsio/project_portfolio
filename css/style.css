@@ -161,7 +161,7 @@ i{
 }
 
 .rightBox p{
-	text-align: center;
+	text-align: left;
 	font-size: 0.8em;
 	padding: 10px 50px;
 	flex: 1;
@@ -260,7 +260,7 @@ footer h2{
 	}
 	
 	.rightBox p{
-		text-align: center;
+		text-align: left;
 		font-size: 0.9em;
 		padding: 10px 50px;
 		flex: 1;
@@ -292,7 +292,10 @@ footer h2{
 	}
 	/* Center */
 	.centralContainer{
-		padding: 80px;
+		padding-bottom: 80px;
+		padding-right: 80px;
+		padding-left: 80px;
+		padding-top: 150px;
 	}
 	.centralContainer img{
 		width: 65%;
@@ -350,7 +353,7 @@ footer h2{
 	}
 	
 	.rightBox p{
-		text-align: center;
+		text-align: left;
 		font-size: 0.9em;
 		padding: 10px 50px;
 		flex: 1;
