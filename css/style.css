@@ -92,6 +92,13 @@ i{
     margin:20px;
     cursor: pointer;
 }
+
+.burger div{
+	width: 25px;
+	height: 3px;
+	background-color: white;
+	margin: 5px;
+}
 /* Center container */
 
 .centralContainer{
@@ -237,6 +244,9 @@ footer h2{
         height: 50%;
         width: 50%;
     }
+	.burger{
+		display: none;
+	}
 	
 	.rightBox{
 		float: right;
@@ -290,6 +300,10 @@ footer h2{
 		z-index: 2;
 		
 	}
+	.burger{
+		display: none;
+	}
+	
 	/* Center */
 
 	.centralContainer img{
