@@ -1,6 +1,6 @@
 function burger(){
     
-    var menu = document.querySelector('main-nav')
+    var menu = document.getElementsByClassName('main-nav')
     if (menu.style.display ==! "flex") 
     {
         menu.style.display = "flex";
