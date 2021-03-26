@@ -39,6 +39,7 @@ a {
 .main-nav {
 	margin-top: -10px;
 	display: none;
+	flex-direction: column;
 }
 .logo a,
 .main-nav a {
@@ -79,6 +80,7 @@ header .main-nav .closeMenu{
 header .openMenu{
 	display: block;
 }
+/* TO DELETE
 i{
 	display: inline-block;
 	padding: 12px;
@@ -91,13 +93,19 @@ i{
     font-size: 2rem;
     margin:20px;
     cursor: pointer;
-}
+} 
+*/
 
 .burger div{
-	width: 25px;
-	height: 3px;
-	background-color: white;
+	width: 30px;
+	height: 5px;
+	background-color: #223850;
 	margin: 5px;
+}
+
+.burger {
+    text-align: -webkit-center;
+	padding: 25px;
 }
 /* Center container */
 
@@ -127,7 +135,7 @@ i{
 	bottom: 65px;
     right: 40px;
 	color: white;
-	
+	text-shadow: 2.5px 2px #92192b
 }
 
 .centralContainer h2{
@@ -137,6 +145,7 @@ i{
 	bottom: 28px;
     right: 40px;
 	color: white;
+	text-shadow: 2.5px 2px #92192b
 }
 
 /* Bot container */
@@ -227,10 +236,11 @@ footer h2{
 
 
 
-@media (min-width: 769px) {
+@media (min-width: 550px) {
 	.header, /*this is universal for all pages */ 
 	.main-nav {
 		display: flex;
+		flex-direction: unset;
 	}
 	.header { /*this is universal for all pages */
 		flex-direction: column;
@@ -286,6 +296,9 @@ footer h2{
 		justify-content: center;
 		padding-top: 100px;
 		background-color: #223850 ;
+	}
+	.main-nav {
+		flex-direction: unset;
 	}
 	.main-nav a { /*this is universal for all pages */
 		color: #ffffff;
