@@ -580,7 +580,7 @@ input[type=text], select, input[type=email], input[type=tel] {
 			display: flex;
 		}
 		.contactBox p{
-			text-align: center;
+			text-align: left;
 			font-size: 13px;
 		}
 		.contactForm, .svg_place{
@@ -630,10 +630,12 @@ input[type=text], select, input[type=email], input[type=tel] {
 		}
 		.contactBox img{
 			width: 400px;
+			height: auto;
 		}
 		.contactBox p{
-			text-align: center;
-			font-size: 15px;
+			text-align: left;
+			font-size: 14px;
+			align-self: center;
 		}
 		.formClass{
 			
