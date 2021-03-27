@@ -59,8 +59,6 @@ a {
 	color: #718daa;
 }
 
-
-
 .header {
 	padding-top: .5em;
 	padding-bottom: .5em;
@@ -71,30 +69,6 @@ a {
     height: 20%;
     width: 20%;
 }
-header .main-nav .closeMenu{
-	display: block;
-	position: absolute;
-	top:20px;
-	right:20px;
-}
-header .openMenu{
-	display: block;
-}
-/* TO DELETE
-i{
-	display: inline-block;
-	padding: 12px;
-}
-i{
-    font-size: 2rem;
-    cursor: pointer;
-}
-.openMenu{
-    font-size: 2rem;
-    margin:20px;
-    cursor: pointer;
-} 
-*/
 
 .burger div{
 	width: 30px;
@@ -107,6 +81,20 @@ i{
     text-align: -webkit-center;
 	padding: 25px;
 }
+
+.burger h3{
+	cursor: pointer;
+}
+
+.burger h3:active{
+
+animation: burgerTap 1.5s;  
+}
+@keyframes burgerTap {
+	0% {transform: rotate(0deg);}
+	100% {transform: rotate(360deg);}
+  }
+
 /* Center container */
 
 .centralContainer{

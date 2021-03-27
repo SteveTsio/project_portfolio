@@ -1,13 +1,13 @@
 function burger(){
     
     var menu = document.getElementsByClassName('main-nav')
-    console.log(menu);
-    if (menu.style.display ==! "flex") 
+
+    if (menu[0].style.display != "flex") 
     {
-        menu.style.display = "flex";
+        menu[0].style.display = "flex";
      } 
      else
     {
-        menu.style.display = "none";
+        menu[0].style.display = "none";
      }
 }

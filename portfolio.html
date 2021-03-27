@@ -8,16 +8,24 @@
     <link rel="shortcut icon" type="image/jpg" href="img/favicon/favicon.ico"/>
 </head>
 <body>
-    <header class="header">
-		<h1 class="logo"><a href="index.html" ><img src="img/stlogo.png" alt="main logo of the company"></a></h1>
+  <header class="header">
+	  <div class="logo"><a href="index.html"><img src="img/stlogo.png" alt="main logo of the company"></a></div>
+      <div class="burger">
+        <a onclick="burger()">
+        <div class="line1"></div>
+        <h3>Menu</h3>
+        <div class="line3"></div>
+        </a>
+      </div>
       <ul class="main-nav">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="bio.html">Bio</a></li>
-        <li><a href="portfolio.html">Portfolio</a></li>
-        <li><a href="contact.html">Contact</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="bio.html">Bio</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html">Contact</a></li> 
       </ul>
-	</header> 
+   
+	</header>  
     <div class="jumboContainer" id="jumboPort">
         <!-- box with photos1-->
         <div class="compliBox" id="complibox1">
@@ -99,6 +107,7 @@
         <h2 id="toLarge">Navigate</h2>
         <h2>Stavros Tsiogas creative agency Van Lennepbuurt 43 Amsterdam Tel. 2293-827364 </h2>
     </footer>
-    <script src="js/slider.js"></script>    
+    <script src="js/slider.js"></script>
+    <script src="js/burger.js"></script>    
 </body>
 </html>
